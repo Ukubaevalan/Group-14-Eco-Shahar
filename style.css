@@ -1,0 +1,317 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+header {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    background-image: url(./images/johann-siemens-EPy0gBJzzZU-unsplash.jpg);
+    /* background: url(<path-to-image>), lightgray 50% / cover no-repeat; */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+body{
+    background-color: #fff;
+}
+
+header nav {
+    max-width: 95%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header .checkboxbtn {
+    font-size: 30px;
+    color: white;
+    margin: auto;
+    float: right;
+    cursor: pointer;
+    display: none;
+    position: relative;
+    z-index: 10;
+}
+
+#check {
+    display: none;
+}
+
+
+
+
+header nav .logo {
+    margin-top: 0px;
+}
+
+header nav .ul ul li a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+
+header nav .ul ul li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 45px;
+}
+
+header nav .button {
+    margin-top: 15px;
+    background: none;
+
+}
+
+header .box {
+    max-width: 80%;
+    height: auto;
+    margin: auto;
+    color: white;
+    margin-top: 100px
+}
+
+header .box .box1 {
+    max-width: 600px;
+}
+
+header .box .box1 p {
+    color: #FFF;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+header .box .box1 h1 {
+    color: #FFF;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 70px;
+}
+
+header .box .box2 .eij {
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
+}
+
+header .box .box2 {
+    height: auto;
+    margin: auto;
+    color: white;
+    margin-top: 100px;
+
+}
+
+header .box .box2 .box2_1 {
+    float: left;
+}
+
+header .box .box2 .box2_1 h5 {
+    color: rgba(255, 255, 255, 0.65);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+header .box .box2 .eij .box2_1 p {  
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+header .box .box2 {
+    padding-bottom: 100px;
+}
+
+
+
+
+
+
+section {
+    max-width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+
+}
+
+section .section1 {
+    max-width: 80%;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+
+section .section1 .section2 {
+    color: white;
+    margin: auto;
+
+
+}
+
+section .section1 .section2 .p {
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+section .section1 .section2 p {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+section .section1 .section2 button {
+    background: none;
+    color: white;
+    border: 2px solid #9400FF;
+    background-color: #9400FF;
+    padding: 10px 30px;
+    border-radius: 35px;
+    margin-top: 60px;
+
+}
+
+
+main {
+    max-width: 100%;
+    height: auto;
+    background-color: black;
+
+}
+
+main .main1 {
+    max-width: 80%;
+    height: auto;
+    padding-top: 100px;
+    margin: auto;
+}
+
+main p {
+    color: #FFF;
+    text-align: center;
+    font-size: 29px;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+@media (max-width:710px) {
+    header .checkboxbtn {
+        display: block;
+        float: right;
+        margin-top: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+
+    header nav .ul ul {
+        position: fixed;
+        width: 200px;
+        height: 300px;
+        right: -100%;
+        text-align: center;
+        background: #e4c932;
+        transition: 0.5s;
+    }
+
+    header #check:checked~nav .ul ul {
+        right: 0;
+        z-index: 5;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    section .section1 {
+        grid-template-columns: auto;
+    }
+
+    main p {
+        font-size: 19px;
+    }
+}
+
+
+
+
+#logo{
+    width: 150px;
+    color: white!important;
+}
+
+#shikoyat-section{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 100px;
+gap: 10px;
+}
+#shikoyat-btn {
+    display: inline-block;
+    position: relative;
+    padding: 20px 38px;
+    top: 0;
+    font-size: 20px;
+    font-family: "Open Sans", Helvetica;
+    border-radius: 50px;
+    border-bottom: 1px solid rgba( 28, 227, 125, 0.5 );
+    background: rgb(18, 181, 107);
+    color: #fff!important;
+    border: none;
+    box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.1 );
+    
+    -webkit-transform: translateZ(0);
+       -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+            transform: translateZ(0);
+    
+    -webkit-transition: all 0.2s ease;
+       -moz-transition: all 0.2s ease;
+        -ms-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+  }
+#shikoyat-btn:hover {
+    top: -10px;
+    box-shadow: 0px 10px 10px rgba( 15, 165, 60, 0.2 );
+    
+    -webkit-transform: rotateX(20deg);
+       -moz-transform: rotateX(20deg);
+        -ms-transform: rotateX(20deg);
+            transform: rotateX(20deg);
+  }
+  
+  #shikoyat-btn:active {
+    top: 0px;
+    box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.0 );
+    background: rgba( 20, 224, 133, 1 );
+  }
+  .photo-item {
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+img {
+    max-width: 200px;
+    max-height: 200px;
+    display: block;
+    margin-bottom: 10px;
+}

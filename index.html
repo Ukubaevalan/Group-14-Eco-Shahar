@@ -1,13 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Eco-Shahar</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
+    <header> <input type="checkbox" id="check">
+        <label for="check" class="checkboxbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <nav>
+
+            <div class="logo"><img id="logo" src="./images/logo_eco-shahar.png" alt=""></div>
+            <div class="ul">
+               
+            </div>
+            
+        </nav>
+
+
+
+
+
+
+        <div class="box">
+            <div class="box1">
+                <h1>Saytimizga hush kelibsiz!</h1>
+                
+                <p>Ushbu saytimizga siz ecologiyaga ziyon yetkazayotkan shahslarni ustidan shikoyat qilsangiz boladi. Siz bizning <a style="color: white;" href="https://t.me/Ecocityshaxar_bot">Telegram</a> Botimiz orqali shikoyat qilsangiz boldai. </p>
+                <button id="shikoyat-btn">
+                    <a style="color: white;" href="#shikoyat-section">Shikoyat</a>
+                </button>
+
+            </div>
+            <div class="box2">
+                <div class="eij">
+                    <div class="box2_1">
+                        <p>Lorem ipsum dolor sit,</p>
+                        <h5>Lorem ipsum dolor sit, <br>met consectetur adipisicing elit. <br> Deserunt mollitia numquam odit </h5>
+                    </div>
+                    <div class="box2_1">
+                        <p>Lorem ipsum dolor sit,</p>
+                        <h5>Lorem ipsum dolor sit, <br>met consectetur adipisicing elit. <br> Deserunt mollitia numquam odit </h5>
+                    </div>
+                    <div class="box2_1">
+                        <p>Lorem ipsum dolor sit,</p>
+                        <h5>Lorem ipsum dolor sit, <br>met consectetur adipisicing elit. <br> Deserunt mollitia numquam odit </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <h1 style="margin: 30px;">Shikoyat</h1>
+    <div class="input" id="shikoyat-section">
+        
+        <div>
+            <input type="file" id="fileInput" multiple>
+        <input type="text" id="nameInput" placeholder="Name">
+        <input type="text" id="addressInput" placeholder="Address">
+        <input type="text" id="descriptionInput" placeholder="Description">
+        <button id="resetButton">Reset Gallery</button>
+        </div>
+        
+    </div>
+    <h1 style="margin: 30px;">Fotolar</h1>
+    <div style="margin: 30px;" id="photoGallery"></div>
     <script src="script.js"></script>
 </body>
 </html>
